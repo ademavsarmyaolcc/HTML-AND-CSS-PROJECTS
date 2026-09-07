@@ -13,11 +13,13 @@ nav { display: flex; gap: 24px; } nav a { color: var(--ink); text-decoration: no
 h1, h2, h3 { line-height: 1.15; margin-top: 0; } h1 { font-size: clamp(2.8rem, 6vw, 5.5rem); margin-bottom: 22px; max-width: 760px; } h2 { font-size: 2.4rem; margin-bottom: 30px; } h3 { margin-bottom: 8px; }
 .hero-text { color: var(--muted); font-size: 1.15rem; max-width: 650px; margin-bottom: 30px; }
 .button { background: var(--coral); border: 0; border-radius: 7px; color: #fff; cursor: pointer; display: inline-block; font: inherit; font-weight: 700; padding: 13px 22px; text-decoration: none; } .button:hover { background: #d96b52; }
-.hero-card { align-items: center; background: var(--mint); border-radius: 50%; display: flex; font-size: 9rem; height: 330px; justify-content: center; margin: auto; width: 330px; }
+.hero-card { background: var(--mint); border-radius: 50%; height: 330px; margin: auto; overflow: hidden; width: 330px; }
+.hero-card img { height: 100%; object-fit: cover; width: 100%; }
 .section { padding: 85px 0; } .pet-grid, .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .pet-card { background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; padding-bottom: 24px; } .pet-card h3, .pet-card p, .pet-card a { margin-left: 24px; margin-right: 24px; } .pet-card a { font-weight: 700; text-decoration: none; }
 .pet-image { align-items: center; display: flex; font-size: 6rem; height: 210px; justify-content: center; } .cat { background: #f9dfb8; } .dog { background: #d8e8f2; } .rabbit { background: #e7ddf1; }
 .services-section { background: var(--mint); } .service-grid > div { background: rgba(255,255,255,.7); border-radius: 10px; padding: 28px; } .service-grid span { font-size: 2.5rem; }
+.video-section { margin-top: 55px; text-align: center; } .video-section iframe { border: 0; border-radius: 10px; max-width: 100%; }
 .contact-section { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: start; } form { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 28px; } label { display: block; font-weight: 700; margin: 0 0 5px; } input, textarea { border: 1px solid #cfc4ba; border-radius: 5px; font: inherit; margin: 0 0 18px; padding: 11px; width: 100%; } textarea { resize: vertical; }
 .site-footer { background: var(--ink); color: #fff; padding: 28px 0; }
 @media (max-width: 700px) { .header-content, nav { flex-direction: column; gap: 12px; } .hero-content, .contact-section { grid-template-columns: 1fr; } .hero-card { height: 230px; width: 230px; font-size: 6rem; } .pet-grid, .service-grid { grid-template-columns: 1fr; } h1 { font-size: 3rem; } }
