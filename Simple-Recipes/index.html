@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simple, delicious recipes for everyday cooking.">
+  <title>Simple Recipes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav-bar" aria-label="Main navigation">
+    <ul class="nav-list">
+      <li><a href="#home">Home</a></li>
+      <li class="drop">
+        <a href="#recipes" class="drop-link">Recipes <span aria-hidden="true">⌄</span></a>
+        <div class="rollover-menu">
+          <a href="#featured">Featured Recipe</a>
+          <a href="#pasta">Pasta</a>
+          <a href="#chicken">Chicken</a>
+          <a href="#vegetarian">Vegetarian</a>
+          <a href="#dessert">Dessert</a>
+          <a href="#breakfast">Breakfast</a>
+          <a href="#drinks">Drinks</a>
+        </div>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Cook simply. Eat well.</p>
+      <h1>Simple Recipes</h1>
+      <p>Fresh ideas, familiar ingredients, and recipes worth making again.</p>
+      <a class="button" href="#recipes">Explore recipes</a>
+    </div>
+  </header>
+
+  <section id="about" class="about-section recipe-anchor" aria-labelledby="about-title">
+    <div class="about-mark" aria-hidden="true">SR</div>
+    <div>
+      <p class="eyebrow">A little about this project</p>
+      <h2 id="about-title">Made for everyday cooks</h2>
+      <p>Simple Recipes is a student-created recipe collection built around one idea: cooking at home should feel approachable, colorful, and fun. I designed this page to practice semantic HTML, responsive CSS, navigation anchors, and accessible form elements while sharing recipes I would genuinely make on a busy weeknight.</p>
+      <p class="about-note">Built with curiosity, good ingredients, and a little extra garlic.</p>
+    </div>
+  </section>
+
+  <main id="recipes" class="content-wrap">
+    <section id="featured" class="featured recipe-anchor" aria-labelledby="featured-title">
+      <div class="featured-image image-pasta" role="img" aria-label="Creamy tomato pasta"></div>
+      <div class="featured-copy">
+        <p class="eyebrow">Recipe of the week</p>
+        <h2 id="featured-title">Creamy Tomato Pasta</h2>
+        <p>A silky, comforting pasta made with garlic, basil, and a bright tomato sauce. An easy weeknight favorite.</p>
+        <div class="recipe-meta"><span>Prep: 10 min</span><span>Cook: 20 min</span><span>Easy</span></div>
+        <a class="button" href="#pasta">View recipe</a>
+      </div>
+    </section>
+
+    <div class="section-heading">
+      <p class="eyebrow">Find your next favorite</p>
+      <h2>Recipes for every table</h2>
+    </div>
+    <section class="recipe-grid" aria-label="Recipe collection">
+      <article id="pasta" class="recipe-card recipe-anchor"><div class="card-image image-pasta"></div><div class="card-body"><span class="tag">Pasta</span><h3>Lemon Herb Pasta</h3><p>Bright lemon, parsley, and parmesan in every bite.</p><div class="card-footer"><span>25 min</span><span>Easy</span></div></div></article>
+      <article id="chicken" class="recipe-card recipe-anchor"><div class="card-image image-chicken"></div><div class="card-body"><span class="tag">Chicken</span><h3>Honey Garlic Chicken</h3><p>Golden chicken glazed with a sweet-savory sauce.</p><div class="card-footer"><span>35 min</span><span>Easy</span></div></div></article>
+      <article id="vegetarian" class="recipe-card recipe-anchor"><div class="card-image image-veggie"></div><div class="card-body"><span class="tag">Vegetarian</span><h3>Roasted Veggie Bowl</h3><p>Colorful vegetables, grains, and a creamy tahini drizzle.</p><div class="card-footer"><span>40 min</span><span>Easy</span></div></div></article>
+      <article id="dessert" class="recipe-card recipe-anchor"><div class="card-image image-dessert"></div><div class="card-body"><span class="tag">Dessert</span><h3>Berry Yogurt Parfait</h3><p>Layers of berries, yogurt, and crunchy honey granola.</p><div class="card-footer"><span>10 min</span><span>Easy</span></div></div></article>
+      <article id="breakfast" class="recipe-card recipe-anchor"><div class="card-image image-breakfast"></div><div class="card-body"><span class="tag">Breakfast</span><h3>Avocado Toast</h3><p>Creamy avocado, chili flakes, and a jammy egg.</p><div class="card-footer"><span>15 min</span><span>Easy</span></div></div></article>
+      <article id="drinks" class="recipe-card recipe-anchor"><div class="card-image image-drinks"></div><div class="card-body"><span class="tag">Drinks</span><h3>Garden Lime Spritz</h3><p>A refreshing sparkling drink with lime and mint.</p><div class="card-footer"><span>5 min</span><span>Easy</span></div></div></article>
+    </section>
+
+    <section id="contact" class="contact-section recipe-anchor" aria-labelledby="contact-title">
+      <div><p class="eyebrow">Stay in the loop</p><h2 id="contact-title">Let’s keep cooking</h2><p>Send us a note or subscribe for a weekly serving of simple inspiration.</p></div>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row"><label>First name<input type="text" name="first-name" required></label><label>Last name<input type="text" name="last-name" required></label></div>
+        <div class="form-row"><label>Email<input type="email" name="email" required></label><label>Phone number<input type="tel" name="phone"></label></div>
+        <label>Message<textarea name="message" rows="4"></textarea></label>
+        <label class="checkbox"><input type="checkbox" name="subscribe"> Send me weekly recipes</label>
+        <button class="button" type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer><div class="footer-inner"><div><strong>Simple Recipes</strong><p>Good food, made uncomplicated.</p></div><div><p>© 2026 Simple Recipes</p><p>123 Market Street · (555) 010-2026</p></div></div></footer>
+</body>
+</html>
