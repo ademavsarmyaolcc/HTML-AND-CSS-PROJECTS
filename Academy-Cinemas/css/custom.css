@@ -13,7 +13,6 @@
 
 html { scroll-behavior: smooth; }
 body { min-width: 320px; background: #171217 url('../images/theater-curtains.jpg') center top / cover fixed; color: #f7f2e8; font-family: var(--body-font-family); letter-spacing: .02em; }
-
 .academy-navbar { min-height: 88px; background: var(--secondary-color); border-bottom: 5px solid #620d17; }
 .navbar-brand { color: var(--main-color-accent) !important; font-family: var(--main-font-family); font-size: 2.8rem; line-height: 1; padding-left: 10px; }
 .nav-link { color: var(--main-color-accent) !important; font-family: var(--main-font-family); font-size: 1.75rem; padding-left: 1.5rem !important; }
@@ -24,7 +23,6 @@ body { min-width: 320px; background: #171217 url('../images/theater-curtains.jpg
 .movie-menu { border: 0; border-radius: 0; box-shadow: 0 0 16px 2px rgba(0,0,0,.4); background: var(--accent-color); padding: 0; }
 .dropdown-item { color: var(--main-color-accent); font-family: var(--main-font-family); text-align: center; font-size: 1.45rem; padding: 12px 18px; border-bottom: 2px solid rgb(117,77,13); white-space: normal; }
 .dropdown-item:hover, .dropdown-item:focus { color: #fff; background-color: #363636; }
-
 .hero-section { background: linear-gradient(90deg, rgba(18,12,18,.97), rgba(18,12,18,.75), rgba(18,12,18,.38)); min-height: 560px; }
 .eyebrow { color: var(--main-color-accent); font-family: var(--main-font-family); font-size: 1.15rem; letter-spacing: .1em; text-transform: uppercase; }
 .hero-section h1, h2, h3 { font-family: var(--main-font-family); }
@@ -36,7 +34,6 @@ body { min-width: 320px; background: #171217 url('../images/theater-curtains.jpg
 .hero-card img { display: block; width: 100%; height: 360px; object-fit: cover; filter: saturate(.8); }
 .hero-card-caption { position: absolute; inset: auto 0 0; display: flex; justify-content: space-between; gap: 10px; align-items: center; padding: 18px; background: linear-gradient(transparent, rgba(0,0,0,.9)); font-family: var(--body-font-family); }
 .hero-card-caption .badge { background: var(--main-color-accent); color: #241a20; }
-
 .section-shell { background: rgba(20, 16, 20, .92); }
 .section-note { color: #c8bfb1; }
 .movie-card { overflow: hidden; background: #272126; border: 1px solid rgba(237,192,3,.35); border-radius: 6px; box-shadow: 0 12px 30px rgba(0,0,0,.25); transition: transform .25s ease, border-color .25s ease; }
@@ -47,32 +44,29 @@ body { min-width: 320px; background: #171217 url('../images/theater-curtains.jpg
 .showtimes { display: flex; flex-wrap: wrap; gap: 8px; }
 .showtimes a { border: 1px solid var(--main-color-accent); border-radius: 3px; color: var(--main-color-accent); padding: 5px 10px; text-decoration: none; }
 .showtimes a:hover { background: var(--main-color-accent); color: #241a20; }
-
 .tickets-section { background: linear-gradient(90deg, rgba(101,12,24,.97), rgba(68,12,21,.88)); }
 .tickets-section .lead { color: #f3e4da; }
 .ticket-detail { display: flex; flex-direction: column; padding: 14px 16px; background: rgba(0,0,0,.24); border-left: 3px solid var(--main-color-accent); }
 .ticket-detail strong { color: var(--main-color-accent); font-family: var(--main-font-family); font-size: 2rem; line-height: 1; }
 .ticket-box { background: #201820; border: 1px solid rgba(237,192,3,.4); }
 .ticket-box p { color: #cfc5bb; }
-
 .contact-details { border-left: 3px solid var(--main-color-accent); padding-left: 18px; color: #ddd2c8; }
 .contact-form { background: #f8f2e8; border-radius: 5px; color: #261b21; box-shadow: 0 15px 35px rgba(0,0,0,.25); }
 .contact-form .form-control { border-color: #c7bdb1; border-radius: 3px; }
 .contact-form .form-control:focus { border-color: #8d1522; box-shadow: 0 0 0 .25rem rgba(141,21,34,.18); }
-
 .academy-footer { background: #100c10; border-top: 5px solid #620d17; }
 .academy-footer a { color: var(--main-color-accent); text-decoration: none; }
 .academy-footer a:hover { color: #fff; }
 .footer-image { width: 100%; height: 150px; object-fit: cover; border: 2px solid rgba(237,192,3,.6); }
-
-@media (max-width: 991.98px) {
-  .navbar-collapse { padding: 14px 0; }
-  .nav-link { padding-left: 0 !important; }
-  .movie-menu { border: 1px solid rgba(237,192,3,.35); }
-}
-@media (max-width: 575.98px) {
-  .navbar-brand { font-size: 2.2rem; }
-  .hero-section h1 { font-size: 3.6rem; }
-  .hero-card img { height: 270px; }
-  .hero-card-caption { flex-direction: column; align-items: flex-start; }
-}
+.about-image { width: 100%; height: 180px; object-fit: cover; border: 2px solid rgba(237, 192, 3, .45); }
+.showtime-list .list-group-item { background: rgba(39, 33, 38, .9); border-color: rgba(237, 192, 3, .3); padding: 0; }
+.showtime-list a { display: flex; justify-content: space-between; gap: 12px; padding: 14px; color: #f7f2e8; text-decoration: none; }
+.showtime-list a:hover { color: var(--main-color-accent); background: #363036; }
+.showtime-list span { color: var(--main-color-accent); white-space: nowrap; }
+.deals-section { background: linear-gradient(135deg, rgba(101, 12, 24, .97), rgba(42, 16, 28, .94)); }
+.deals-copy { max-width: 620px; color: #f3e4da; }
+.deal-card { background: rgba(19, 13, 19, .72); border: 1px solid rgba(237, 192, 3, .35); border-radius: 5px; }
+.deal-card p { color: #cfc5bb; }
+.deal-icon { display: inline-block; margin-bottom: 12px; color: var(--main-color-accent); font-family: var(--main-font-family); font-size: 2.25rem; }
+@media (max-width: 991.98px) { .navbar-collapse { padding: 14px 0; } .nav-link { padding-left: 0 !important; } .movie-menu { border: 1px solid rgba(237,192,3,.35); } }
+@media (max-width: 575.98px) { .navbar-brand { font-size: 2.2rem; } .hero-section h1 { font-size: 3.6rem; } .hero-card img { height: 270px; } .hero-card-caption { flex-direction: column; align-items: flex-start; } }
